@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Add the "defer" attribute to load the script after the HTML has been parsed -->
+    <script defer src="index.js"></script>
+  </head>
+
+  <body class="bg-black container-fluid position-relative">
+    <div
+      class="container bg-black d-flex flex-column align-content-center justify-content-center p-0"
+    >
+      <!-- Navbar -->
+      <nav class="navbar container navbar-expand-lg fixed-top">
+        <div class="container-fluid text-primary bg-black shadow">
+          <a class="navbar-brand fs-4 text" href="#">
+            <i
+              class="fa-solid fa-bars text-light fs-1 text-center"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+            ></i>
+          </a>
+          <a class="navbar-brand fs-4 text" href="#">
+            <i class="fa-solid fa-bell text-light fs-1"></i>
+          </a>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Offcanvas structure -->
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header bg-black position-relative">
+          <i
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+            class="fa-solid fa-arrow-left fs-1 position-absolute offcanvas-icon text-white"
+          ></i>
+
+          <div
+            class="logo container d-flex justify-content-center align-content-lg-center flex-column mt-5 mb-5"
+          >
+            <img
+              src="https://img.freepik.com/free-vector/crash-test-dummy-car-seat-grid-background_1308-75255.jpg"
+              alt="Dummy Logo"
+            />
+            <h1 class="text-center mt-2 text-white">Saurab</h1>
+            <button
+              type="button"
+              class="btn bg-light fs-5 text-center w-100 rounded-4 text-nowrap w-auto"
+            >
+              Change Password
+            </button>
+          </div>
+        </div>
+        <div class="offcanvas-body">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <ul class="border-white">
+              <li
+                class="py-lg-3 p-md-2 p-sm-1 py-1 d-flex justify-content-between align-items-center"
+              >
+                <div class="card-body d-flex">
+                  <i class="fs-1 me-5 text-center fa-solid fa-chart-line"></i>
+
+                  <h5 class="card-title fs-4">Dashboard</h5>
+                </div>
+                <span class="rounded-pill"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </li>
+              <li
+                class="py-lg-3 p-md-2 p-sm-1 py-1 -item d-flex justify-content-between align-items-center"
+              >
+                <div class="card-body d-flex">
+                  <i class="fs-1 me-5 text-center fa-solid fa-book"></i>
+
+                  <h5 class="card-title fs-4">All Transactions</h5>
+                </div>
+                <span class="rounded-pill"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </li>
+              <li
+                class="py-lg-3 p-md-2 p-sm-1 py-1 -item d-flex justify-content-between align-items-center"
+              >
+                <div class="card-body d-flex">
+                  <i
+                    class="fs-1 me-5 text-center fa-solid fa-hand-point-up"
+                  ></i>
+
+                  <h5 class="card-title fs-4">Lead</h5>
+                </div>
+                <span class="rounded-pill"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </li>
+              <li
+                class="py-lg-3 p-md-2 p-sm-1 py-1 -item d-flex justify-content-between align-items-center"
+              >
+                <div class="card-body d-flex">
+                  <i class="fs-1 me-5 text-center fa-solid fa-credit-card"></i>
+
+                  <h5 class="card-title fs-4">Sitewise Report</h5>
+                </div>
+                <span class="rounded-pill"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </li>
+              <li
+                class="py-lg-3 p-md-2 p-sm-1 py-1 -item d-flex justify-content-between align-items-center"
+              >
+                <div class="card-body d-flex">
+                  <i class="fs-1 me-5 text-center fa-solid fa-image"></i>
+
+                  <h5 class="card-title fs-4">Payout Screenshot</h5>
+                </div>
+                <span class="rounded-pill"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </li>
+              <li
+                class="py-lg-3 p-md-2 p-sm-1 py-1 -item d-flex justify-content-between align-items-center"
+              >
+                <div class="card-body d-flex">
+                  <i class="fs-1 me-5 text-center fa-users-viewfinder"></i>
+
+                  <h5 class="card-title fs-4">Promotional Poster</h5>
+                </div>
+                <span class="rounded-pill"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Offcanvas structure -->
+
+      <!-- Navbar -->
+
+      <!-- LOGO -->
+      <div
+        class="logo container d-flex justify-content-center align-content-lg-center flex-column mt-5 mb-5"
+      >
+        <img
+          src="https://img.freepik.com/free-vector/crash-test-dummy-car-seat-grid-background_1308-75255.jpg"
+          alt="Dummy Logo"
+        />
+        <h1 class="text-center mt-2 text-light">Saurab</h1>
+      </div>
+      <!-- LOGO -->
+
+      <!-- Card-section -->
+
+      <div
+        class="container bg-white rounded-4 bg-body-secondary custom-padding"
+      >
+        <div
+          class="row py-2 d-flex col justify-content-around rounded-3 position-relative"
+        >
+          <!-- outside box -->
+
+          <div
+            class="row container-fluid rounded-2 text-center border-1 border-dark pb-3 bg-light position-absolute outside-box"
+          >
+            <div class="col">
+              <h3 class="mt-2">Today</h3>
+              <p>Date</p>
+              <div class="bg-body-secondary rounded-2 p-1">
+                <div class="col container">
+                  <ul class="p-0 d-flex flex-column gap-2">
+                    <li
+                      class="d-flex align-content-center justify-content-between"
+                    >
+                      <span>Deposit</span><span>84126515</span>
+                    </li>
+                    <li
+                      class="d-flex align-content-center justify-content-between"
+                    >
+                      <span>Deposit</span><span>84126515</span>
+                    </li>
+                    <li
+                      class="d-flex align-content-center justify-content-between"
+                    >
+                      <span>Deposit</span><span>84126515</span>
+                    </li>
+                    <li
+                      class="d-flex align-content-center justify-content-between"
+                    >
+                      <span>Deposit</span><span>84126515</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- outside box -->
+          <div
+            class="col-12 row d-flex justify-content-lg-evenly align-items-center"
+          >
+            <div class="col-4 li-lg-3 p-md-2 bg-light">
+              <p class="fs-1 text-center">
+                <i class="fa-solid fa-chart-line"></i>
+              </p>
+              <p class="card-title text-center">Dashboard</p>
+            </div>
+            <div class="col-4 p-lg-3 p-md-2 bg-light">
+              <p class="fs-1 text-center">
+                <i class="fa-solid fa-chart-line"></i>
+              </p>
+              <p class="card-title text-center">Dashboard</p>
+            </div>
+            <div class="col-4 p-lg-3 p-md-2 bg-light">
+              <p class="fs-1 text-center">
+                <i class="fa-solid fa-chart-line"></i>
+              </p>
+              <p class="card-title text-center">Dashboard</p>
+            </div>
+          </div>
+          <div
+            class="col-12 row d-flex justify-content-lg-evenly align-items-center"
+          >
+            <div class="col-4 p-lg-3 p-md-2 bg-light">
+              <p class="fs-1 text-center">
+                <i class="fa-solid fa-chart-line"></i>
+              </p>
+              <p class="card-title text-center">Dashboard</p>
+            </div>
+            <div class="col-4 p-lg-3 p-md-2 bg-light">
+              <p class="fs-1 text-center">
+                <i class="fa-solid fa-chart-line"></i>
+              </p>
+              <p class="card-title text-center">Dashboard</p>
+            </div>
+            <div class="col-4 p-lg-3 p-md-2 bg-light">
+              <p class="fs-1 text-center">
+                <i class="fa-solid fa-chart-line"></i>
+              </p>
+              <p class="card-title text-center">Dashboard</p>
+            </div>
+          </div>
+          <div
+            class="col-12 row d-flex justify-content-lg-evenly align-items-center"
+          >
+            <div class="col-4 p-lg-3 p-md-2 bg-light">
+              <p class="fs-1 text-center">
+                <i class="fa-solid fa-chart-line"></i>
+              </p>
+              <p class="card-title text-center">Dashboard</p>
+            </div>
+            <div class="col-4 p-lg-3 p-md-2 bg-light">
+              <p class="fs-1 text-center">
+                <i class="fa-solid fa-chart-line"></i>
+              </p>
+              <p class="card-title text-center">Dashboard</p>
+            </div>
+            <div class="col-4 p-lg-3 p-md-2 bg-light">
+              <p class="fs-1 text-center">
+                <i class="fa-solid fa-chart-line"></i>
+              </p>
+              <p class="card-title text-center">Dashboard</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card-section -->
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const offcanvasElementList = document.querySelectorAll(".offcanvas");
+      const offcanvasList = [...offcanvasElementList].map(
+        (offcanvasEl) => new bootstrap.Offcanvas(offcanvasEl)
+      );
+    </script>
+  </body>
+</html>
